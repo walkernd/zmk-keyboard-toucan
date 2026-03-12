@@ -1,5 +1,4 @@
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 #define BASE 0
@@ -25,7 +24,7 @@
             bindings = <
 &kp Q  &kp W  &kp F           &kp P          &kp G      &kp J  &kp L  &kp U      &kp Y    &kp SEMICOLON
 &kp A  &kp R  &kp S           &kp T          &kp D      &kp H  &kp N  &kp E      &kp I    &kp O
-&kp Z  &kp X  &kp C           &kp V          &kp B      &kp K  &kp M  &kp COMMA  &kp DOT  &kp FSLH
+&kp Z  &kp X  &kp C           &kp V          &kp B      &kp K  &kp M  &kp COMMA  &kp DOT  &mt BACKSLASH SLASH
        &sl 1  &sk LEFT_SHIFT  &kp BACKSPACE  &kp SPACE
             >;
         };
@@ -33,20 +32,20 @@
         Numbers {
             display-name = "NAV";
             bindings = <
-&kp N1          &kp N2        &kp N3        &kp N4        &kp N5        &kp N6    &kp N7    &kp N8  &kp N9     &kp N0
-&bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans
-&studio_unlock  &trans        &trans        &trans        &trans        &trans    &trans    &trans  &trans     &trans
-                &trans        &trans        &trans        &trans
+&kp N1        &kp N2     &kp N3          &kp N4     &kp N5     &kp TILDE        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&kp NUMBER_6  &kp N7     &kp N8          &kp N9     &kp N0     &kp EXCLAMATION  &kp EQUAL             &kp UP                 &key_repeat       &kt SINGLE_QUOTE
+&kp LC(Z)     &kp LC(X)  &kp LC(C)       &kp LC(V)  &kp LC(A)  &kp AT_SIGN      &kp LEFT_ARROW        &kp DOWN_ARROW         &kp RIGHT_ARROW   &kp MINUS
+              &trans     &sk LEFT_SHIFT  &kp DEL    &kp ENTER
             >;
         };
 
         Functions {
             display-name = "Functions";
             bindings = <
-&kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT  &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR
-&trans    &trans  &trans    &trans    &trans     &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH
-&trans    &trans  &trans    &trans    &trans     &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE
-          &trans  &trans    &trans    &trans
+&kp F1     &kp F2     &kp F3          &kp F4     &kp F5     &kp TILDE        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&kp F6     &kp F7     &kp F8          &kp F9     &kp F10    &kp EXCLAMATION  &kp EQUAL             &kp UP_ARROW           &kp RBKT          &kp BSLH
+&kp LC(Z)  &kp LC(X)  &kp LC(C)       &kp LC(V)  &kp LC(A)  &kp UNDER        &kp LEFT_ARROW        &kp DOWN_ARROW         &kp RIGHT_ARROW   &kp PIPE
+           &trans     &sk LEFT_SHIFT  &kp DEL    &kp ENTER
             >;
         };
 
