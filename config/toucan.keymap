@@ -95,10 +95,10 @@
         Functions {
             display-name = "Functions";
             bindings = <
-&kp F1     &kp F2     &kp F3          &kp F4     &kp F5     &kp TILDE   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &Snip  &bt BT_CLR
-&kp F6     &kp F7     &kp F8          &kp F9     &kp F10    &kp C_MUTE  &kp C_VOLUME_UP       &kp K_CALC             &none  &kp C_AL_TASK_MANAGER
-&kp LC(Z)  &kp LC(X)  &kp LC(C)       &kp LC(V)  &kp LC(A)  &bt BT_NXT  &kp C_VOL_DN          &kp RIGHT_ALT          &none  &none
-           &trans     &sk LEFT_SHIFT  &kp DEL    &kp ENTER
+&kp F1   &kp F2   &kp F3          &kp F4   &kp F5      &kp TILDE   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &Snip  &bt BT_CLR
+&kp F6   &kp F7   &kp F8          &kp F9   &kp F10     &kp C_MUTE  &kp C_VOLUME_UP       &kp K_CALC             &none  &kp C_AL_TASK_MANAGER
+&kp F11  &kp F12  &kp F13         &kp F14  &kp LC(F4)  &bt BT_NXT  &kp C_VOL_DN          &kp RIGHT_ALT          &none  &none
+         &trans   &sk LEFT_SHIFT  &kp DEL  &kp ENTER
             >;
         };
     };
