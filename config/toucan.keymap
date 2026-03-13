@@ -23,6 +23,41 @@
             bindings = <&kp ENTER>;
             key-positions = <13 12>;
         };
+
+        Delete {
+            bindings = <&kp DEL>;
+            key-positions = <4 3>;
+        };
+
+        Tab {
+            bindings = <&kp TAB>;
+            key-positions = <3 2>;
+        };
+
+        Escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <1 0>;
+        };
+
+        control {
+            bindings = <&kp LEFT_CONTROL>;
+            key-positions = <11 10>;
+        };
+
+        Delete_words {
+            bindings = <&Delete_Words>;
+            key-positions = <20 21>;
+        };
+    };
+
+    macros {
+        Delete_Words: Delete_Words {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp LEFT_CONTROL &kp DEL>;
+
+            label = "DELETE_WORDS";
+        };
     };
 
     keymap {
