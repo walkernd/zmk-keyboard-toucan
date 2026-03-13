@@ -49,6 +49,11 @@
             bindings = <&Delete_Words>;
             key-positions = <20 21>;
         };
+
+        Functions {
+            bindings = <&sl 2>;
+            key-positions = <30 31>;
+        };
     };
 
     macros {
