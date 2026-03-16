@@ -47,7 +47,7 @@
 
         Delete_words {
             bindings = <&Delete_Words>;
-            key-positions = <20 21>;
+            key-positions = <20 21 32>;
         };
 
         Functions {
